@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'characters', component: CharactersComponent },
   { path: 'locations', component: LocationsComponent },
   { path: 'episodes', component: EpisodesComponent },
-  { path: 'episodes/:id', component: EpisodeDetailComponent },
+  { path: 'episode/:id', component: EpisodeDetailComponent },
   { path: 'character/:id', component: CharacterDetailComponent },
 
 ];

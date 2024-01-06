@@ -8,5 +8,18 @@ import { HttpClient } from '@angular/common/http';
   styleUrl: './character-detail.component.css'
 })
 export class CharacterDetailComponent {
+  character: any;
 
+  constructor(
+    private route: ActivatedRoute,
+    private http: HttpClient
+  ) { }
+
+  ngOnInit() {
+    const id = this.route.snapshot.paramMap.get('id');
+    this.http.get(`https://rickandmortyapi.com/api/character/${id}`)
+      .subscribe(data => {
+        this.character = data;
+      });
+  }
 }
