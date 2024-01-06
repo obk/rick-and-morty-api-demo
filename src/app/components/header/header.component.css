@@ -1,0 +1,12 @@
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li {
+    margin-right: 10px;
+}
+
+html{
+    background-color: #1a1a1d;
+}
