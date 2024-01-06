@@ -1,0 +1,31 @@
+img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  h2 {
+    color: #FF4136;
+    font-size: 2em;
+  }
+  
+  p {
+    color: #eee;
+    font-size: 1.2em;
+  }
+  
+  a {
+    color: #FF4136;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #FF851B;
+    text-decoration: underline;
+  }
+  
+  .episode-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1em;
+  }

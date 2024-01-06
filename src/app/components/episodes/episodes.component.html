@@ -1,7 +1,7 @@
-<ul>
-    <li *ngFor="let episode of episodes.results">
-      <h2><a [routerLink]="['/episode', episode.id]">{{ episode.name }}</a></h2>
-      <p>{{ episode.episode }}</p>
-      <p>{{ episode.air_date }}</p>
-    </li>
-  </ul>
+<div class="grid-container">
+  <div *ngFor="let episode of episodes">
+    <h2><a [routerLink]="['/episode', episode.id]">{{ episode.name }}</a></h2>
+    <p>{{ episode.episode }}</p>
+    <p>{{ episode.air_date }}</p>
+  </div>
+</div>

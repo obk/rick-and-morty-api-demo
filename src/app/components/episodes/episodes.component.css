@@ -1,0 +1,26 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  a {
+  color: #ff4136;
+  border-bottom: 1px dotted #ff4136;
+}
+a:hover {
+  color: #ff851b;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #85144b;
+}
+
+a:visited:hover {
+  color: #ff851b;
+  text-decoration: none;
+}
+

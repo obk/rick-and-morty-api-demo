@@ -6,3 +6,6 @@
 <p>Gender: {{ character.gender }}</p>
 <p>Origin: {{ character.origin.name }}</p>
 <p>Location: {{ character.location.name }}</p>
+<div class="episode-grid" *ngFor="let episodeUrl of character.episode">
+    <a [routerLink]="['/episode', episodeUrl.split('/').pop()]">Episode {{ episodeUrl.split('/').pop() }}</a>
+  </div>

@@ -10,3 +10,21 @@ ul li {
 html{
     background-color: #1a1a1d;
 }
+a {
+    color: #FF4136;
+    border-bottom: 1px dotted #FF4136;
+}
+  a:hover {
+    color: #FF851B;
+    text-decoration: none;
+  }
+
+  a:visited
+  {
+    color: #85144b;
+  }
+
+  a:visited:hover {
+    color: #FF851B;
+    text-decoration: none;
+  }

@@ -1,7 +1,12 @@
 <div class="grid-container">
-  <div *ngFor="let character of characters.results">
+  <div *ngFor="let character of characters">
     <img [src]="character.image" alt="{{ character.name }}">
-    <h2><a [routerLink]="['/character', character.id]">{{ character.name }} </a></h2>
+    <h2 style="color: red"><a [routerLink]="['/character', character.id]">{{ character.name }} </a></h2>
     <p>{{ character.species }}</p>
   </div>
+</div>
+
+<div class="button-container">
+  <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+  <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
 </div>

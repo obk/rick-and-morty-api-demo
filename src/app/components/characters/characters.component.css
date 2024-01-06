@@ -16,3 +16,42 @@
     height: auto;
     border-radius: 10px;
   }
+  a {
+    color: #FF4136;
+    border-bottom: 1px dotted #FF4136;  }
+  a:hover {
+    color: #FF851B;
+    text-decoration: none;
+  }
+
+  a:visited
+  {
+    color: #85144b;
+  }
+  a:visited:hover {
+    color: #FF851B;
+    text-decoration: none;
+  }
+  button {
+    background-color: #2ECC40; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    justify-items: center;
+    gap: 10px; /* Adjust this value as needed */
+
+  }
