@@ -1,6 +1,13 @@
 # Rick and Morty API Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+This project is a demo application built with Angular. It uses the [Rick and Morty API](https://rickandmortyapi.com/) to display information about characters and episodes from the show.
+
+## Features
+
+- List characters with their details
+- Filter episodes by season
+- Navigate to episode details
+- Responsive design
 
 ## Development server
 
