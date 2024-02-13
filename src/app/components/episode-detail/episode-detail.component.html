@@ -1,3 +1,8 @@
 <h2>{{ episode.name }}</h2>
 <p>{{ episode.episode }}</p>
 <p>{{ episode.air_date }}</p>
+<h3>Characters</h3>
+<ul>
+  <li *ngFor="let character of characters">
+    <a [routerLink]="['/character', c_id]  ">{{ character }}</a>  </li>
+</ul>

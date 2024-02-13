@@ -9,7 +9,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class EpisodeDetailComponent implements OnInit {
   episode: any;
-
+  characters: string[] = [];
+  c_id: string[]= [];
   constructor(
     private route: ActivatedRoute,
     private http: HttpClient
@@ -18,8 +19,16 @@ export class EpisodeDetailComponent implements OnInit {
   ngOnInit() {
     const id = this.route.snapshot.paramMap.get('id');
     this.http.get(`https://rickandmortyapi.com/api/episode/${id}`)
-      .subscribe(data => {
-        this.episode = data;
+      .subscribe((episode: any) => {
+        this.episode = episode;
+        episode.characters.forEach((characterUrl: string) => {
+          console.log(characterUrl);
+          this.http.get(characterUrl).subscribe((character: any) => {
+            this.characters.push(character.name);
+            this.c_id.push(character.id);
+            console.log(this.c_id);
+          });
+        });
       });
   }
 }
